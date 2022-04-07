@@ -63,7 +63,6 @@ export function FormAddImage({ closeModal }: FormAddImageProps): JSX.Element {
         });
         throw new Error();
       }
-      console.log(data);
       await mutation.mutateAsync(data);
       toast({
         title: 'Imagem cadastrada',
